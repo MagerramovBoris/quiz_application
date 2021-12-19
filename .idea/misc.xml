@@ -6,9 +6,11 @@
         <entry key="..\:/PRGRM/boris/GENERAL/quiz_application/app/src/main/res/drawable-mdpi/ic_google2.xml" value="0.1" />
         <entry key="..\:/PRGRM/boris/GENERAL/quiz_application/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1" />
         <entry key="..\:/PRGRM/boris/GENERAL/quiz_application/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/PRGRM/boris/GENERAL/quiz_application/app/src/main/res/layout/created_quizzes_custom_view.xml" value="0.1766304347826087" />
         <entry key="..\:/PRGRM/boris/GENERAL/quiz_application/app/src/main/res/layout/exit_alert_dialog_custom_view.xml" value="0.1" />
-        <entry key="..\:/PRGRM/boris/GENERAL/quiz_application/app/src/main/res/layout/fragment_account.xml" value="0.1" />
-        <entry key="..\:/PRGRM/boris/GENERAL/quiz_application/app/src/main/res/layout/fragment_detail.xml" value="0.1" />
+        <entry key="..\:/PRGRM/boris/GENERAL/quiz_application/app/src/main/res/layout/fragment_account.xml" value="0.18" />
+        <entry key="..\:/PRGRM/boris/GENERAL/quiz_application/app/src/main/res/layout/fragment_add.xml" value="0.1766304347826087" />
+        <entry key="..\:/PRGRM/boris/GENERAL/quiz_application/app/src/main/res/layout/fragment_detail.xml" value="0.25" />
         <entry key="..\:/PRGRM/boris/GENERAL/quiz_application/app/src/main/res/layout/fragment_joined_quizzes.xml" value="0.1" />
         <entry key="..\:/PRGRM/boris/GENERAL/quiz_application/app/src/main/res/layout/fragment_list.xml" value="0.1" />
         <entry key="..\:/PRGRM/boris/GENERAL/quiz_application/app/src/main/res/layout/fragment_quiz.xml" value="0.1" />
