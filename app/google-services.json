@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "753792811377",
+    "firebase_url": "https://mb-quizzlet-default-rtdb.firebaseio.com",
+    "project_id": "mb-quizzlet",
+    "storage_bucket": "mb-quizzlet.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:753792811377:android:2fd403ca21fac2a01cb6d0",
+        "android_client_info": {
+          "package_name": "com.example.quiz_application"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "753792811377-2m6dvnil2qutj2hhc6b9bn47ms4at9go.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.quiz_application",
+            "certificate_hash": "a60630dd8e46865c0bc2a4410a1d7ddbd11920ca"
+          }
+        },
+        {
+          "client_id": "753792811377-g37tq8bmnakojt867ukmkaqs6he2qkif.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBIA5ChYzCJeXOGUYaD7C8O0JaYnNIZEGE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "753792811377-g37tq8bmnakojt867ukmkaqs6he2qkif.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
