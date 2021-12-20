@@ -4,7 +4,7 @@
 
     <string name = "hello_blank_fragment"> Привет, пустой фрагмент </string>
     <string name = "title_activity_maps"> Карта </string>
-    <string name = "note_msg"> Примечание. Здесь вы можете создать свою викторину и поделиться ею с другими, чтобы они могли принять в ней участие. </string>
+    <string name = "note_msg"> Здесь вы можете создать свою викторину и поделиться ею с другими, чтобы они могли принять в ней участие. </string>
     <string name = "developer_note"> Разработал Магеррамов Борис </string>
     <string name = "quizes_created_by_me"> Тесты, созданные мной </string>
     <string name = "log_out"> Выйти </string>
@@ -17,7 +17,7 @@
     <string name = "enter_question"> Введите вопрос </string>
     <string name = "hint_question"> вопрос </string>
     <string name = "enter_answer"> Введите ответ </string>
-    <string name = "hint_answer"> ответ </string>
+    <string name = "hint_answer"> Ответ </string>
     <string name = "enter_option_one"> Введите первый вариант </string>
     <string name = "option_one"> вариант один </string>
     <string name = "enter_option_two"> Введите второй вариант </string>
@@ -34,14 +34,14 @@
     <string name = "enter_quiz_name"> Введите название теста </string>
     <string name = "hint_quiz_name"> название викторины </string>
     <string name = "enter_quiz_description"> Введите описание теста </string>
-    <string name = "quiz_description"> описание викторины </string>
+    <string name = "quiz_description"> Описание викторины </string>
     <string name = "enter_total_number_of_questions"> Введите общее количество вопросов </string>
-    <string name = "hint_total_questions"> всего вопросов </string>
+    <string name = "hint_total_questions"> Всего вопросов </string>
     <string name = "difficulty_level"> Уровень сложности </string>
     <string name = "beginner"> Новичок </string>
     <string name = "intermediate"> Средний </string>
     <string name = "advanced"> Дополнительно </string>
-    <string name = "quiz_created_by_me"> Тест, созданный мной </string>
+    <string name = "quiz_created_by_me"> Тесты, созданные мной </string>
     <string name = "detailDifficultyLevelID_difficulty_level"> Уровень сложности </string>
     <string name = "detailTotalQuestID_total_questions"> Всего вопросов </string>
     <string name = "detailYourScoreID_your_score"> Ваша оценка </string>
@@ -66,7 +66,7 @@
     <string name = "resultFrag_MissedAnsID_not_answered"> Не ответил </string>
     <string name = "resultFrag_MissedAns_NUM_ID_na"> NA </string>
     <string name = "resultFrag_gotoHomeButtonID_go_to_home"> Перейти на главную </string>
-    <string name = "quizAppWelcomeScreen_quiz_app"> Приложение для тестирования </string>
+    <string name = "quizAppWelcomeScreen_quiz_app"> Викторина </string>
     <string name = "sign_in_with_google"> Войти через Google </string>
     <string name = "enter_ID_text_text"> Вставьте уникальный идентификатор ниже </string>
     <string name = "submit_quizID_btn_submit"> Отправить </string>
