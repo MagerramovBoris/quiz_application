@@ -20,16 +20,16 @@
         android:name="com.example.quiz_application.views.fragments.AddFragment"
         android:label="fragment_add"
         tools:layout="@layout/fragment_add" >
-<!--        <action-->
-<!--            android:id="@+id/action_addFragment2_to_accountFragment"-->
-<!--            app:destination="@id/accountFragment"-->
-<!--            app:popUpTo="@id/joinedQuizzesFragment"-->
-<!--            app:popUpToInclusive="true"-->
-<!--            app:enterAnim="@anim/fade_in"-->
-<!--            app:exitAnim="@anim/fade_out"/>-->
-<!--        <action-->
-<!--            android:id="@+id/action_addFragment2_to_createQuizFragment"-->
-<!--            app:destination="@id/createQuizFragment" />-->
+        <action
+            android:id="@+id/action_addFragment2_to_accountFragment"
+            app:destination="@id/accountFragment"
+            app:popUpTo="@id/joinedQuizzesFragment"
+            app:popUpToInclusive="true"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"/>
+        <action
+            android:id="@+id/action_addFragment2_to_createQuizFragment"
+            app:destination="@id/createQuizFragment" />
     </dialog>
 
     <fragment
@@ -37,50 +37,50 @@
         android:name="com.example.quiz_application.views.fragments.AccountFragment"
         android:label="fragment_account"
         tools:layout="@layout/fragment_account" >
-<!--        <action-->
-<!--            android:id="@+id/action_accountFragment_to_createdQuizzesFragment"-->
-<!--            app:destination="@id/createdQuizzesFragment"-->
-<!--            app:popUpTo="@id/joinedQuizzesFragment"-->
-<!--            app:popUpToInclusive="true"-->
-<!--            app:enterAnim="@anim/fade_in"-->
-<!--            app:exitAnim="@anim/fade_out"/>-->
+        <action
+            android:id="@+id/action_accountFragment_to_createdQuizzesFragment"
+            app:destination="@id/createdQuizzesFragment"
+            app:popUpTo="@id/joinedQuizzesFragment"
+            app:popUpToInclusive="true"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"/>
     </fragment>
 
-<!--    <fragment-->
-<!--        android:id="@+id/createQuizFragment"-->
-<!--        android:name="com.example.quiz_application.views.fragments.CreateQuizFragment"-->
-<!--        android:label="fragment_create_quiz"-->
-<!--        tools:layout="@layout/fragment_create_quiz" >-->
-<!--        <action-->
-<!--            android:id="@+id/action_createQuizFragment_to_addQuestionsFragment"-->
-<!--            app:destination="@id/addQuestionsFragment"-->
-<!--            app:popUpTo="@id/joinedQuizzesFragment"-->
-<!--            app:popUpToInclusive="true"-->
-<!--            app:enterAnim="@anim/slide_in_right"-->
-<!--            app:exitAnim="@anim/slide_out_left"-->
-<!--            app:popEnterAnim="@anim/slide_in_left"-->
-<!--            app:popExitAnim="@anim/slide_out_right"/>-->
-<!--    </fragment>-->
+    <fragment
+        android:id="@+id/createQuizFragment"
+        android:name="com.example.quiz_application.views.fragments.CreateQuizFragment"
+        android:label="fragment_create_quiz"
+        tools:layout="@layout/fragment_create_quiz" >
+        <action
+            android:id="@+id/action_createQuizFragment_to_addQuestionsFragment"
+            app:destination="@id/addQuestionsFragment"
+            app:popUpTo="@id/joinedQuizzesFragment"
+            app:popUpToInclusive="true"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+    </fragment>
 
-<!--    <fragment-->
-<!--        android:id="@+id/addQuestionsFragment"-->
-<!--        android:name="com.example.quiz_application.views.fragments.AddQuestionsFragment"-->
-<!--        android:label="fragment_add_questions"-->
-<!--        tools:layout="@layout/fragment_add_questions" >-->
-<!--        <action-->
-<!--            android:id="@+id/action_addQuestionsFragment_to_createdQuizzesFragment"-->
-<!--            app:destination="@id/createdQuizzesFragment"-->
-<!--            app:popUpTo="@id/joinedQuizzesFragment"-->
-<!--            app:popUpToInclusive="true"-->
-<!--            app:enterAnim="@anim/fade_in"-->
-<!--            app:exitAnim="@anim/fade_out"/>-->
-<!--    </fragment>-->
+    <fragment
+        android:id="@+id/addQuestionsFragment"
+        android:name="com.example.quiz_application.views.fragments.AddQuestionsFragment"
+        android:label="fragment_add_questions"
+        tools:layout="@layout/fragment_add_questions" >
+        <action
+            android:id="@+id/action_addQuestionsFragment_to_createdQuizzesFragment"
+            app:destination="@id/createdQuizzesFragment"
+            app:popUpTo="@id/joinedQuizzesFragment"
+            app:popUpToInclusive="true"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"/>
+    </fragment>
 
-<!--    <fragment-->
-<!--        android:id="@+id/createdQuizzesFragment"-->
-<!--        android:name="com.example.quiz_application.views.fragments.CreatedQuizzesFragment"-->
-<!--        android:label="fragment_created_quizzes"-->
-<!--        tools:layout="@layout/fragment_created_quizzes" >-->
-<!--    </fragment>-->
+    <fragment
+        android:id="@+id/createdQuizzesFragment"
+        android:name="com.example.quiz_application.views.fragments.CreatedQuizzesFragment"
+        android:label="fragment_created_quizzes"
+        tools:layout="@layout/fragment_created_quizzes" >
+    </fragment>
 
 </navigation>
