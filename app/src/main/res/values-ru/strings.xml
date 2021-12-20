@@ -71,7 +71,7 @@
     <string name = "enter_ID_text_text"> Вставьте уникальный идентификатор ниже </string>
     <string name = "submit_quizID_btn_submit"> Отправить </string>
     <string name = "cancel_quizID_btn_cancel"> Отменить </string>
-    <string name = "listFragViewQuizButtonID_text"> Просмотреть тест </string>
+    <string name = "listFragViewQuizButtonID_text"> Просмотреть </string>
     <string name = "menu_joinedQuizzesFragment_home"> Главная </string>
     <string name = "menu_addFragment2_add"> Добавить </string>
     <string name = "menu_accountFragment_account"> Аккаунт </string>
