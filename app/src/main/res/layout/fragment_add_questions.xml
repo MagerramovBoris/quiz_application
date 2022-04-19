@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".views.fragments.AddQuestionsFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:id="@+id/discard_question_btn"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:layout_marginStart="14dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/quiz_close_btn"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="@id/next_question_btn"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/next_question_btn" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:fontFamily="sans-serif"
+            android:text="@string/create_quiz"
+            android:textColor="@color/primary_color"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="@id/discard_question_btn"
+            app:layout_constraintStart_toEndOf="@id/discard_question_btn"
+            app:layout_constraintTop_toTopOf="@id/discard_question_btn" />
+
+        <android.widget.Button
+            android:id="@+id/next_question_btn"
+            android:layout_width="157dp"
+            android:layout_height="41dp"
+            android:layout_marginTop="36dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/add_quiz_button_outline"
+            android:foreground="?attr/selectableItemBackground"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:text="@string/next_question"
+            android:textAllCaps="false"
+            android:textColor="@color/primary_black"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/quest_num_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="36dp"
+            android:text="@string/question_no"
+            android:textColor="@color/primary_color"
+            android:textSize="18dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/next_question_btn" />
+
+        <ProgressBar
+            android:id="@+id/question_no_progressBar"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="84dp"
+            android:layout_height="84dp"
+            android:progressDrawable="@drawable/custom_progressbar_timer"
+            android:progress="100"
+            android:indeterminateTint="@color/primary_color"
+            app:layout_constraintEnd_toEndOf="@id/quest_num_text"
+            app:layout_constraintStart_toStartOf="@id/quest_num_text"
+            app:layout_constraintTop_toBottomOf="@id/quest_num_text"/>
+
+        <TextView
+            android:id="@+id/quest_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:textAlignment="center"
+            android:textColor="@color/primary_text"
+            android:textSize="26dp"
+            app:layout_constraintBottom_toBottomOf="@id/question_no_progressBar"
+            app:layout_constraintEnd_toEndOf="@id/question_no_progressBar"
+            app:layout_constraintStart_toStartOf="@id/question_no_progressBar"
+            app:layout_constraintTop_toTopOf="@id/question_no_progressBar" />
+
+        <TextView
+            android:id="@+id/enter_quest_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="36dp"
+            android:text="@string/enter_question"
+            android:textColor="@color/primary_color"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/quest_num" />
+
+        <EditText
+            android:id="@+id/enter_question"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="24dp"
+            android:background="@drawable/button_options_outline"
+            android:hint="@string/hint_question"
+            android:padding="16dp"
+            android:textColor="@color/primary_text"
+            android:textColorHint="@color/colorLightText"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/enter_quest_hint" />
+
+        <TextView
+            android:id="@+id/enter_ans_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="24dp"
+            android:text="@string/enter_answer"
+            android:textColor="@color/primary_color"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/enter_question" />
+
+        <EditText
+            android:id="@+id/enter_answer"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="24dp"
+            android:background="@drawable/button_options_outline"
+            android:hint="@string/hint_answer"
+            android:padding="16dp"
+            android:textColor="@color/primary_text"
+            android:textColorHint="@color/colorLightText"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/enter_ans_hint" />
+
+        <TextView
+            android:id="@+id/enter_first_option_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="24dp"
+            android:text="@string/enter_option_one"
+            android:textColor="@color/primary_color"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/enter_answer" />
+
+        <EditText
+            android:id="@+id/enter_option_one"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="24dp"
+            android:background="@drawable/button_options_outline"
+            android:hint="@string/option_one"
+            android:padding="16dp"
+            android:textColor="@color/primary_text"
+            android:textColorHint="@color/colorLightText"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/enter_first_option_hint" />
+
+        <TextView
+            android:id="@+id/enter_second_option_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="24dp"
+            android:text="@string/enter_option_two"
+            android:textColor="@color/primary_color"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/enter_option_one" />
+
+        <EditText
+            android:id="@+id/enter_option_second"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="14dp"
+            android:layout_marginEnd="24dp"
+            android:background="@drawable/button_options_outline"
+            android:hint="@string/hint_option_two"
+            android:padding="16dp"
+            android:textColor="@color/primary_text"
+            android:textColorHint="@color/colorLightText"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/enter_second_option_hint" />
+
+        <TextView
+            android:id="@+id/enter_third_option_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="24dp"
+            android:text="@string/enter_option_three"
+            android:textColor="@color/primary_color"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/enter_option_second" />
+
+        <EditText
+            android:id="@+id/enter_option_three"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="24dp"
+            android:background="@drawable/button_options_outline"
+            android:hint="@string/option_three"
+            android:padding="16dp"
+            android:textColor="@color/primary_text"
+            android:textColorHint="@color/colorLightText"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/enter_third_option_hint" />
+
+        <TextView
+            android:id="@+id/enter_fourth_option_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="24dp"
+            android:text="@string/enter_option_four"
+            android:textColor="@color/primary_color"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/enter_option_three" />
+
+        <EditText
+            android:id="@+id/enter_option_fourth"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="24dp"
+            android:background="@drawable/button_options_outline"
+            android:hint="@string/hint_option_four"
+            android:padding="16dp"
+            android:textColor="@color/primary_text"
+            android:textColorHint="@color/colorLightText"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/enter_fourth_option_hint" />
+
+
+        <TextView
+            android:id="@+id/ques_time_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="24dp"
+            android:text="@string/enter_time_for_this_question"
+            android:textColor="@color/primary_color"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/enter_option_fourth" />
+
+        <TextView
+            android:id="@+id/ques_time_hint_milisec"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:text="@string/in_seconds"
+            android:textColor="@color/primary_color"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/ques_time_hint"
+            app:layout_constraintStart_toEndOf="@id/ques_time_hint"
+            app:layout_constraintTop_toTopOf="@+id/ques_time_hint" />
+
+        <EditText
+            android:id="@+id/question_time"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="24dp"
+            android:background="@drawable/button_options_outline"
+            android:hint="@string/hint_time_to_this_question"
+            android:inputType="number"
+            android:padding="16dp"
+            android:textColor="@color/primary_text"
+            android:textColorHint="@color/colorLightText"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ques_time_hint" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

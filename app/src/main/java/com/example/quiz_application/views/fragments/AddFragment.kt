@@ -33,9 +33,9 @@ class AddFragment : BottomSheetDialogFragment() {
         navController = Navigation.findNavController(requireActivity(), R.id.nav_host_list_fragment)
 
 //        create quiz
-//        fragmentAddBinding.createQuizSelectBtn.setOnClickListener {
-//            navController.navigate(R.id.action_addFragment2_to_createQuizFragment)
-//        }
+        fragmentAddBinding.createQuizSelectBtn.setOnClickListener {
+            navController.navigate(R.id.action_addFragment2_to_createQuizFragment)
+        }
 
 
 //        join quiz

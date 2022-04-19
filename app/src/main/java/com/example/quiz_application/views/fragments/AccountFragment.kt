@@ -40,11 +40,11 @@ class AccountFragment : Fragment() {
 
         fragmentAccountBinding.userData = user
 
-//        Созданный пользователем квизы
-//        fragmentAccountBinding.myCreatedQuizButton.setOnClickListener {
-//
-//            navController.navigate(R.id.action_accountFragment_to_createdQuizzesFragment)
-//        }
+//        Созданные пользователем квизы
+        fragmentAccountBinding.myCreatedQuizButton.setOnClickListener {
+
+            navController.navigate(R.id.action_accountFragment_to_createdQuizzesFragment)
+        }
 
         fragmentAccountBinding.logoutButton.setOnClickListener {
             firebaseAuth.signOut()
