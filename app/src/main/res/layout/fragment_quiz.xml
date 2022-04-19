@@ -108,7 +108,7 @@
                 android:lineHeight="26sp"
                 android:text="@string/quiz_question_loading_questions"
                 android:textAlignment="center"
-                android:textColor="@color/white"
+                android:textColor="@color/primary_text"
                 android:textSize="18sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
